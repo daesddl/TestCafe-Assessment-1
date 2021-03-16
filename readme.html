@@ -1,0 +1,111 @@
+<h1>Testcafe Workshop (Front End)</h1>
+<h3>First Assessment</h3>
+<p>Author: Daniel Espinosa.</p>
+<p>email: daes.ddl@gmail.com</p>
+<hr>
+<p>Automate given scenarios for the sample page <a href="https://www.saucedemo.com/">SauceDemo</a></p>
+<p>Test Files:</p>
+<ol>
+<li><code>Login_ValidUsers.test.js</code>
+<ul>
+<li>Script Name:  <code>test_login_ValidUsers</code></li>
+<li>Covering Valid Usernames provided by the Website:
+<ul>
+<li>standard_user</li>
+<li>problem_user</li>
+<li>performance_glitch_use</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Login_InvalidUsers.test.js</code>
+<ul>
+<li>Script Name: <code>test_login_InvalidUsers</code></li>
+<li>Verifying that the Login proceed can not proceed without using provided valid Users/Passwords</li>
+<li>Test validates all possible errors handled by the Login Process.
+<ul>
+<li>Epic sadface: Username and password do not match any user in this service</li>
+<li>Epic sadface: Username and password do not match any user in this service</li>
+<li>Epic sadface: Sorry, this user has been locked out.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Logout.test.js</code>
+<ul>
+<li>Script Name: <code>test_logout</code></li>
+<li>Validate user navigates to the Login Page.</li>
+</ul>
+</li>
+<li><code>Navigate_ShoppingCart.test.js</code>
+<ul>
+<li>Script Name: <code>test_Navigate_ShoppingCart</code></li>
+<li>Validate user navigate to the Shopping Cart Page</li>
+</ul>
+</li>
+<li><code>AddItem_ShoppingCart.test.js</code>
+<ul>
+<li>Script Name: <code>test_AddItem_ShoppingCart</code></li>
+<li>Validate that items added to the Shopping Cart matches with the information at Shopping Cart Page.</li>
+<li>Validate multiple items added to the Shopping Cart</li>
+</ul>
+</li>
+<li><code>MissingInformation_Checkout.test.js</code>
+<ul>
+<li>Script Name: <code>test_MissingInformation_Checkout</code></li>
+<li>Validate Error Messages are within filling the mail information:
+<ul>
+<li>Error: First Name is required</li>
+<li>Error: Last Name is required</li>
+<li>Error: Postal Code is required</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Overview_Checkout.test.js</code>
+<ul>
+<li>Script Name: <code>test_Overview_Checkout</code></li>
+<li>Validates the user navigates to the Overview Page once data has been filled</li>
+</ul>
+</li>
+<li><code>ValidateItems_Overview_Checkout.test.js</code>
+<ul>
+<li>Script Name: <code>test_ValidateItems_Checkout</code></li>
+<li>Validates items in the Overview Page match with added items
+<ul>
+<li>Single Item</li>
+<li>Multiple Dynamic Items</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Complete_Purchase.test.js</code>
+<ul>
+<li>Script Name: <code>test_Complete_Purchase</code></li>
+<li>Validate the user navigates to the Confirmation Page.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4>Full Coverage Test ran with the following Script using npm resources from the json package</h4>
+<ul>
+<li>It covers the test on the available Web browsers:
+<ul>
+<li>Firefox</li>
+<li>Chrome</li>
+<li>Chromium</li>
+<li>Internet Explorer</li>
+<li>Edge</li>
+<li>Opera</li>
+<li>Safari</li>
+</ul>
+</li>
+<li>Using XUNIT as the main Reporter under console</li>
+<li>JSON File: <code>testData.json</code> provided as the Data File</li>
+<li></li>
+</ul>
+<pre><code>    npm run all_test
+</code></pre>
+<p>In case may be needed to run the full coverage test only on Chrome Web browser:</p>
+<pre><code>    npm run test_all_Chrome
+</code></pre>

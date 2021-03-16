@@ -1,0 +1,26 @@
+{
+  "name": "assessment_1",
+  "version": "1.0.0",
+  "description": "TestCafe Workshop - First Assessment",
+  "main": "index.js",
+  "scripts": {
+    "all_test"                  : "testcafe all ./page_model/test/ -r xunit",
+    "test_all_Chrome"           : "testcafe chrome ./page_model/test/",
+    "test_login_ValidUsers"     : "testcafe chrome ./page_model/test/Login_ValidUsers.test.js",
+    "test_login_InvalidUsers"   : "testcafe chrome ./page_model/test/Login_InvalidUsers.test.js",
+    "test_logout"               : "testcafe chrome ./page_model/test/Logout.test.js",
+    "test_Navigate_ShoppingCart": "testcafe chrome ./page_model/test/Navigate_ShoppingCart.test.js",
+    "test_AddItem_ShoppingCart" : "testcafe chrome ./page_model/test/AddItem_ShoppingCart.test.js",
+    "test_MissingInformation_Checkout" : "testcafe chrome ./page_model/test/MissingInformation_Checkout.test.js",
+    "test_Overview_Checkout"    : "testcafe chrome ./page_model/test/Overview_Checkout.test.js",
+    "test_ValidateItems_Checkout": "testcafe chrome ./page_model/test/ValidateItems_Overview_Checkout.test.js",
+    "test_Complete_Purchase"    : "testcafe chrome ./page_model/test/Complete_Purchase.test.js"
+
+  },
+  "author": "Daniel Espinosa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "testcafe": "^1.12.0"
+  }
+}
